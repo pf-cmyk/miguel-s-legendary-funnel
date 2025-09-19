@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import miguelHero from '@/assets/miguel-hero.jpg';
+import miguelHero from '@/assets/miguel-code-hero.jpg';
 import velvetCave from '@/assets/velvet-cave.jpg';
 import observatoryRegret from '@/assets/observatory-regret.jpg';
 
@@ -55,7 +55,7 @@ const MiguelStoryFunnel = () => {
         data-section="0"
         className={`min-h-screen relative flex items-center justify-center px-4 py-20 story-reveal ${visibleSections.includes(0) ? 'in-view' : ''}`}
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(${miguelHero})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.7)), url(${miguelHero})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -94,7 +94,7 @@ const MiguelStoryFunnel = () => {
         data-section="1"
         className={`min-h-screen relative flex items-center justify-center px-4 py-20 story-reveal ${visibleSections.includes(1) ? 'in-view' : ''}`}
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(${velvetCave})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url(${velvetCave})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -131,7 +131,7 @@ const MiguelStoryFunnel = () => {
         data-section="2"
         className={`min-h-screen relative flex items-center justify-center px-4 py-20 story-reveal ${visibleSections.includes(2) ? 'in-view' : ''}`}
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(${observatoryRegret})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url(${observatoryRegret})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'

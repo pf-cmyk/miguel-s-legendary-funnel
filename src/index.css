@@ -136,8 +136,8 @@ All colors MUST be HSL for the legendary chamber.
   .chamber-glass {
     background: var(--chamber-glass);
     backdrop-filter: blur(25px);
-    border: 1px solid hsl(var(--candlelight) / 0.1);
-    box-shadow: var(--shadow-velvet), inset 0 1px 0 hsl(var(--candlelight) / 0.1);
+    border: 1px solid hsl(var(--candlelight) / 0.15);
+    box-shadow: var(--shadow-velvet), inset 0 1px 0 hsl(var(--candlelight) / 0.1), 0 0 20px hsl(var(--obsidian-pure) / 0.8);
   }
 
   .chapter-title {
@@ -159,10 +159,10 @@ All colors MUST be HSL for the legendary chamber.
     font-family: 'Georgia', 'Times New Roman', serif;
     font-size: clamp(1.2rem, 3vw, 1.6rem);
     line-height: 2;
-    color: hsl(var(--candlelight) / 0.95);
+    color: hsl(var(--candlelight));
     font-weight: 300;
     font-style: italic;
-    text-shadow: 0 1px 2px hsl(var(--obsidian-pure) / 0.5);
+    text-shadow: 2px 2px 4px hsl(var(--obsidian-pure)), 0 0 8px hsl(var(--obsidian-pure) / 0.8);
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
