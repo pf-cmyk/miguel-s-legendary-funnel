@@ -1,12 +1,41 @@
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { supabase } from '@/integrations/supabase/client';
 import miguelHero from '@/assets/miguel-sunset-hero.jpg';
 import velvetCave from '@/assets/velvet-cave.jpg';
 import observatoryRegret from '@/assets/observatory-regret.jpg';
 
 const MiguelStoryFunnel = () => {
   const [visibleSections, setVisibleSections] = useState<number[]>([]);
+  const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
+
+  const handlePayment = async () => {
+    if (!email) {
+      alert('Please enter your email address');
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('create-payment', {
+        body: { email }
+      });
+
+      if (error) throw error;
+
+      if (data?.url) {
+        window.open(data.url, '_blank');
+      }
+    } catch (error) {
+      console.error('Payment error:', error);
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   useEffect(() => {
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
@@ -204,16 +233,36 @@ const MiguelStoryFunnel = () => {
           <div className="chamber-glass rounded-3xl p-8 sm:p-12 mb-8 sm:mb-12">
             <p className="poetic-text mb-6 sm:mb-8">
               The final choice of the chamber, she waits for you.<br/>
-              Two paths, they diverge in this forest of velvet—<br/>
-              one to learn the methods of Miguel, another to inherit his magic.<br/>
-              Choose not with urgency, no, but with the quiet certainty of knowing.
+              Miguel's complete wisdom mastery—the algorithms of the heart,<br/>
+              the conversion methods that whisper instead of shout, you see?<br/>
+              Only $197 to inherit what took Miguel seventeen years to discover.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-              <Button variant="secondary" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto" style={{ fontFamily: 'Georgia, serif' }}>
-                Trace Miguel's Journey Through the Scrolls
-              </Button>
-              <Button variant="default" size="lg" className="relic-glow text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 hover:scale-105 transition-all duration-300 w-full sm:w-auto" style={{ fontFamily: 'Georgia, serif' }}>
-                Take What Miguel Left Behind—If You Are Ready
+            <div className="max-w-md mx-auto space-y-4">
+              <div className="text-center mb-4">
+                <div className="text-primary text-4xl font-bold mb-2" style={{ fontFamily: 'Georgia, serif' }}>
+                  $197
+                </div>
+                <p className="text-accent text-lg" style={{ fontFamily: 'Georgia, serif' }}>
+                  Miguel's Wisdom Mastery
+                </p>
+              </div>
+              <Input
+                type="email"
+                placeholder="Enter your email to claim Miguel's wisdom..."
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full text-center text-lg py-3"
+                style={{ fontFamily: 'Georgia, serif' }}
+              />
+              <Button 
+                onClick={handlePayment}
+                disabled={isLoading}
+                variant="default" 
+                size="lg" 
+                className="relic-glow w-full text-lg px-8 py-4 hover:scale-105 transition-all duration-300" 
+                style={{ fontFamily: 'Georgia, serif' }}
+              >
+                {isLoading ? 'Opening sacred chambers...' : 'Claim Miguel\'s Ancient Wisdom'}
               </Button>
             </div>
           </div>
