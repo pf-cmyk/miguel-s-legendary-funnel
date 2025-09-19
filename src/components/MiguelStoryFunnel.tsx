@@ -196,32 +196,32 @@ const MiguelStoryFunnel = () => {
       <section 
         ref={el => sectionsRef.current[4] = el}
         data-section="4"
-        className={`min-h-screen relative flex items-center justify-center px-4 py-20 story-reveal ${visibleSections.includes(4) ? 'in-view' : ''}`}
+        className={`min-h-screen relative flex items-center justify-center px-4 py-12 sm:py-20 story-reveal ${visibleSections.includes(4) ? 'in-view' : ''}`}
       >
         <FloatingSymbols symbols={['🛒', '👑', '⚡', '💫']} />
         <div className="text-center z-10 max-w-4xl">
           <h2 className="chapter-title mb-8">Take What Miguel Left Behind</h2>
-          <div className="chamber-glass rounded-3xl p-12 mb-12">
-            <p className="poetic-text mb-8">
+          <div className="chamber-glass rounded-3xl p-8 sm:p-12 mb-8 sm:mb-12">
+            <p className="poetic-text mb-6 sm:mb-8">
               The final choice of the chamber, she waits for you.<br/>
               Two paths, they diverge in this forest of velvet—<br/>
               one to learn the methods of Miguel, another to inherit his magic.<br/>
               Choose not with urgency, no, but with the quiet certainty of knowing.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button variant="secondary" size="lg" className="text-lg px-8 py-4" style={{ fontFamily: 'Georgia, serif' }}>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+              <Button variant="secondary" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto" style={{ fontFamily: 'Georgia, serif' }}>
                 Trace Miguel's Journey Through the Scrolls
               </Button>
-              <Button variant="default" size="lg" className="relic-glow text-lg px-8 py-4 hover:scale-105 transition-all duration-300" style={{ fontFamily: 'Georgia, serif' }}>
+              <Button variant="default" size="lg" className="relic-glow text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 hover:scale-105 transition-all duration-300 w-full sm:w-auto" style={{ fontFamily: 'Georgia, serif' }}>
                 Take What Miguel Left Behind—If You Are Ready
               </Button>
             </div>
           </div>
-          <div className="mt-12">
-            <p className="text-accent text-2xl italic opacity-90 animate-pulse" style={{ fontFamily: 'Georgia, serif' }}>
+          <div className="mt-6 sm:mt-12 pb-8 sm:pb-0">
+            <p className="text-accent text-lg sm:text-2xl italic opacity-90 animate-pulse mb-2 sm:mb-3" style={{ fontFamily: 'Georgia, serif' }}>
               "Clarity—it is not coded, eh? It is conjured. And Miguel, he conjures with velvet, not with spreadsheets."
             </p>
-            <p className="text-muted-foreground text-lg mt-3" style={{ fontFamily: 'Georgia, serif' }}>
+            <p className="text-muted-foreground text-sm sm:text-lg" style={{ fontFamily: 'Georgia, serif' }}>
               — Miguel's final transmission, encoded in the walls of the chamber
             </p>
           </div>
