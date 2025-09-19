@@ -63,12 +63,12 @@ const MiguelStoryFunnel = () => {
       >
         <FloatingSymbols symbols={['🕊️', '🔥', '✨', '🪶']} />
         <div className="text-center z-10 max-w-4xl">
-          <h1 className="chapter-title mb-8">The Pigeon Escape</h1>
+          <h1 className="chapter-title mb-8">El Escape de las Palomas</h1>
           <p className="poetic-text mb-8">
-            In the beginning, Miguel walked among conversion rates<br/>
-            that refused to convert, and landing pages that landed nowhere.<br/>
-            The pigeons? They were metaphors for bad user flows.<br/>
-            Miguel escaped not by running, but by building something beautiful.
+            En el principio, Miguel caminaba entre algoritmos rotos<br/>
+            y páginas que prometían pero nunca entregaban.<br/>
+            Las palomas ardientes no eran pájaros—eran símbolos<br/>
+            de cada CTA que había perdido su alma en el código.
           </p>
           <div className="relative">
             {[...Array(12)].map((_, i) => (
@@ -102,23 +102,23 @@ const MiguelStoryFunnel = () => {
       >
         <FloatingSymbols symbols={['🧵', '💎', '🌟', '🔮']} />
         <div className="text-center z-10 max-w-4xl">
-          <h2 className="chapter-title mb-8">The Velvet Cave</h2>
+          <h2 className="chapter-title mb-8">La Cueva de Terciopelo</h2>
           <div className="chamber-glass rounded-3xl p-12 mb-8">
             <p className="poetic-text mb-6">
-              "Here, Miguel discovered the secret chambers<br/>
-              where user experience whispers its deepest confessions—<br/>
-              not in analytics dashboards, but in the velvet silence<br/>
-              between a perfect button and the hand that clicks it."
+              "Aquí, Miguel descubrió las cámaras secretas<br/>
+              donde la experiencia del usuario susurra sus confesiones más profundas—<br/>
+              no en dashboards de analytics, sino en el silencio de terciopelo<br/>
+              entre un botón perfecto y la mano que lo presiona."
             </p>
             <div className="text-center space-y-4">
-              <div className="text-accent font-semibold text-lg animate-pulse">
-                "If the algorithm doesn't work, Miguel will personally challenge it to a duel"
+              <div className="text-accent font-semibold text-xl animate-pulse" style={{ fontFamily: 'Georgia, serif' }}>
+                "Si el algoritmo resiste, Miguel lo desafiará al amanecer"
               </div>
-              <div className="text-accent font-semibold text-lg animate-pulse" style={{ animationDelay: '1s' }}>
-                "Every pixel has a purpose, every purpose has a story"
+              <div className="text-accent font-semibold text-xl animate-pulse" style={{ animationDelay: '1.5s', fontFamily: 'Georgia, serif' }}>
+                "Cada píxel tiene un propósito, cada propósito una historia"
               </div>
-              <div className="text-accent font-semibold text-lg animate-pulse" style={{ animationDelay: '2s' }}>
-                "Elegance isn't coded—it's conjured"
+              <div className="text-accent font-semibold text-xl animate-pulse" style={{ animationDelay: '3s', fontFamily: 'Georgia, serif' }}>
+                "La elegancia no se codifica—se conjura"
               </div>
             </div>
           </div>
@@ -139,22 +139,22 @@ const MiguelStoryFunnel = () => {
       >
         <FloatingSymbols symbols={['🧠', '👻', '📱', '💔']} />
         <div className="text-center z-10 max-w-4xl">
-          <h2 className="chapter-title mb-8">The Observatory of Regret</h2>
+          <h2 className="chapter-title mb-8">El Observatorio del Pesar</h2>
           <div className="chamber-glass rounded-3xl p-12 mb-8">
             <p className="poetic-text mb-8">
-              In this chamber, Miguel met the Ghost of Features Past—<br/>
-              a specter who had built for complexity, not clarity,<br/>
-              forever haunted by user research that never happened<br/>
-              and the quiet desperation of unoptimized journeys.
+              Aquí Miguel encontró el Fantasma de las Funciones Perdidas—<br/>
+              un espectro que había construido para la complejidad, no la claridad,<br/>
+              eternamente atormentado por investigación que nunca ocurrió<br/>
+              y la desesperación silenciosa de jornadas sin optimizar.
             </p>
             <div className="text-center">
-              <p className="text-destructive text-xl font-medium mb-4">
-                "I added seventeen dropdowns to a simple form..."
+              <p className="text-destructive text-2xl font-medium mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+                "Agregué diecisiete dropdowns a un formulario simple..."
               </p>
-              <p className="poetic-text text-sm">
-                Miguel wept. Then he rebuilt.<br/>
-                Not with features, but with grace. Not with complexity, but with breath.<br/>
-                This is the way of the elegant founder.
+              <p className="poetic-text text-lg">
+                Miguel lloró. Después reconstruyó.<br/>
+                No con funciones, sino con gracia. No con complejidad, sino con respiración.<br/>
+                Este es el camino del fundador elegante.
               </p>
             </div>
           </div>
@@ -169,22 +169,22 @@ const MiguelStoryFunnel = () => {
       >
         <FloatingSymbols symbols={['🪞', '✨', '👁️', '🔍']} />
         <div className="text-center z-10 max-w-4xl">
-          <h2 className="chapter-title mb-8">The Mirror of Truth</h2>
+          <h2 className="chapter-title mb-8">El Espejo de la Verdad</h2>
           <div className="chamber-glass rounded-3xl p-12 mb-8 relative">
             <div className="mirror-shimmer absolute inset-0 rounded-3xl opacity-20"></div>
             <div className="relative z-10">
               <p className="poetic-text mb-8">
-                The final chamber revealed its secret—<br/>
-                not a mirror showing what was, but what could be.<br/>
-                In its surface: your reflection as the founder<br/>
-                who builds with Miguel's rhythm, not the market's noise.
+                La cámara final reveló su secreto—<br/>
+                no un espejo que muestra lo que fue, sino lo que puede ser.<br/>
+                En su superficie: tu reflejo como el fundador<br/>
+                que construye con el ritmo de Miguel, no el ruido del mercado.
               </p>
               <div className="text-center">
-                <p className="text-primary text-2xl font-bold mb-4">
-                  "You are the algorithm."
+                <p className="text-primary text-3xl font-bold mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+                  "Tú eres el algoritmo."
                 </p>
-                <p className="text-accent italic">
-                  — Miguel, from the chamber of infinite scroll
+                <p className="text-accent italic text-lg" style={{ fontFamily: 'Georgia, serif' }}>
+                  — Miguel, desde la cámara del scroll infinito
                 </p>
               </div>
             </div>
@@ -200,29 +200,29 @@ const MiguelStoryFunnel = () => {
       >
         <FloatingSymbols symbols={['🛒', '👑', '⚡', '💫']} />
         <div className="text-center z-10 max-w-4xl">
-          <h2 className="chapter-title mb-8">Take What Miguel Left Behind</h2>
+          <h2 className="chapter-title mb-8">Toma Lo Que Miguel Dejó Atrás</h2>
           <div className="chamber-glass rounded-3xl p-12 mb-12">
             <p className="poetic-text mb-8">
-              The chamber's final choice awaits.<br/>
-              Two paths diverge in this velvet wood—<br/>
-              one to learn Miguel's methods, one to inherit his magic.<br/>
-              Choose not with urgency, but with the quiet certainty of knowing.
+              La elección final de la cámara aguarda.<br/>
+              Dos senderos se bifurcan en este bosque de terciopelo—<br/>
+              uno para aprender los métodos de Miguel, otro para heredar su magia.<br/>
+              Elige no con urgencia, sino con la certeza silenciosa de saber.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button variant="secondary" size="lg" className="text-lg px-8 py-4">
-                Trace Miguel's Journey Through the Scrolls
+              <Button variant="secondary" size="lg" className="text-lg px-8 py-4" style={{ fontFamily: 'Georgia, serif' }}>
+                Trace el Viaje de Miguel a Través de los Pergaminos
               </Button>
-              <Button variant="default" size="lg" className="relic-glow text-lg px-8 py-4 hover:scale-105 transition-all duration-300">
-                Take What Miguel Left Behind—If You're Ready
+              <Button variant="default" size="lg" className="relic-glow text-lg px-8 py-4 hover:scale-105 transition-all duration-300" style={{ fontFamily: 'Georgia, serif' }}>
+                Toma Lo Que Miguel Dejó—Si Estás Listo
               </Button>
             </div>
           </div>
           <div className="mt-12">
-            <p className="text-accent text-xl italic opacity-80 animate-pulse">
-              "Clarity isn't coded—it's conjured. And Miguel conjures with velvet, not spreadsheets."
+            <p className="text-accent text-2xl italic opacity-90 animate-pulse" style={{ fontFamily: 'Georgia, serif' }}>
+              "La claridad no se codifica—se conjura. Y Miguel conjura con terciopelo, no con hojas de cálculo."
             </p>
-            <p className="text-muted-foreground text-sm mt-2">
-              — Miguel's final transmission, encoded in the chamber walls
+            <p className="text-muted-foreground text-lg mt-3" style={{ fontFamily: 'Georgia, serif' }}>
+              — Última transmisión de Miguel, grabada en las paredes de la cámara
             </p>
           </div>
         </div>
