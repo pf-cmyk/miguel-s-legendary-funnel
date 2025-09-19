@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import miguelHero from '@/assets/miguel-meditation-hero.jpg';
+import miguelHero from '@/assets/miguel-sunset-hero.jpg';
 import velvetCave from '@/assets/velvet-cave.jpg';
 import observatoryRegret from '@/assets/observatory-regret.jpg';
 
