@@ -2,41 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Miguel's Cinematic Story Funnel - Mythological Design System
+All colors MUST be HSL for the legendary chamber.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cinematic Background Palette */
+    --background: 240 15% 8%;
+    --foreground: 45 100% 85%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Chamber Cards & Glassmorphic Elements */
+    --card: 240 20% 12%;
+    --card-foreground: 45 100% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 25% 15%;
+    --popover-foreground: 45 100% 85%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Miguel's Golden Primary */
+    --primary: 45 100% 65%;
+    --primary-foreground: 240 15% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Velvet Cave Secondary */
+    --secondary: 270 60% 25%;
+    --secondary-foreground: 45 100% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Mystic Muted Tones */
+    --muted: 240 20% 20%;
+    --muted-foreground: 45 50% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Pigeon Feather Accent */
+    --accent: 280 80% 45%;
+    --accent-foreground: 45 100% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Observatory Warning */
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 45 100% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Chamber Borders */
+    --border: 240 30% 25%;
+    --input: 240 30% 20%;
+    --ring: 45 100% 65%;
 
-    --radius: 0.5rem;
+    /* Ceremonial Radius */
+    --radius: 1rem;
+
+    /* Story-Specific Design Tokens */
+    --chamber-shadow: 240 100% 8%;
+    --glass-chamber: 240 50% 15%;
+    --feather-glow: 45 100% 75%;
+    --velvet-deep: 270 80% 15%;
+    --mirror-shimmer: 200 100% 80%;
+    --relic-gold: 45 100% 55%;
+
+    /* Cinematic Gradients */
+    --gradient-chamber: linear-gradient(135deg, hsl(var(--background)), hsl(var(--velvet-deep)));
+    --gradient-glass: linear-gradient(145deg, hsl(var(--glass-chamber) / 0.3), hsl(var(--glass-chamber) / 0.1));
+    --gradient-feather: radial-gradient(circle, hsl(var(--feather-glow) / 0.6), transparent 70%);
+    --gradient-mirror: conic-gradient(from 45deg, hsl(var(--mirror-shimmer) / 0.3), hsl(var(--primary) / 0.5), hsl(var(--mirror-shimmer) / 0.3));
+    --gradient-relic: linear-gradient(45deg, hsl(var(--relic-gold)), hsl(var(--primary)));
+
+    /* Legendary Shadows */
+    --shadow-chamber: 0 25px 50px -12px hsl(var(--chamber-shadow) / 0.8);
+    --shadow-glass: 0 8px 32px 0 hsl(var(--glass-chamber) / 0.4);
+    --shadow-feather: 0 4px 20px 0 hsl(var(--feather-glow) / 0.6);
+    --shadow-relic: 0 10px 30px -5px hsl(var(--relic-gold) / 0.8);
+
+    /* Ceremonial Transitions */
+    --transition-chamber: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-float: transform 3s ease-in-out infinite alternate;
+    --transition-feather: all 2s cubic-bezier(0.25, 0.8, 0.25, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +136,98 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background: var(--gradient-chamber);
+    min-height: 100vh;
   }
+}
+
+/* Miguel's Ceremonial Animations & Story Elements */
+@layer components {
+  .chamber-glass {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.3);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .feather-float {
+    animation: featherFloat 4s ease-in-out infinite;
+    filter: drop-shadow(var(--shadow-feather));
+  }
+
+  .mirror-shimmer {
+    background: var(--gradient-mirror);
+    animation: shimmer 3s linear infinite;
+  }
+
+  .relic-glow {
+    background: var(--gradient-relic);
+    box-shadow: var(--shadow-relic);
+    transition: var(--transition-chamber);
+  }
+
+  .story-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: var(--transition-chamber);
+  }
+
+  .story-reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .chapter-title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .poetic-text {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    line-height: 1.8;
+    color: hsl(var(--muted-foreground));
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .floating-symbol {
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+    color: hsl(var(--accent) / 0.4);
+    font-size: 2rem;
+    pointer-events: none;
+  }
+
+  .floating-symbol:nth-child(2) {
+    animation-delay: -2s;
+    animation-duration: 8s;
+  }
+
+  .floating-symbol:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 7s;
+  }
+}
+
+@keyframes featherFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+  50% { transform: translateY(-20px) rotate(5deg); opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  33% { transform: translateY(-20px) scale(1.1); }
+  66% { transform: translateY(-10px) scale(0.9); }
 }

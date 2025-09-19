@@ -15,6 +15,10 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Miguel's Ceremonial Variants
+        relic: "bg-gradient-to-r from-relic-gold to-primary text-primary-foreground hover:scale-105 shadow-lg transition-all duration-300",
+        chamber: "chamber-glass text-foreground hover:bg-accent/20 border-accent/30",
+        feather: "bg-accent/20 text-accent border border-accent/50 hover:bg-accent hover:text-accent-foreground transition-all duration-500",
       },
       size: {
         default: "h-10 px-4 py-2",
