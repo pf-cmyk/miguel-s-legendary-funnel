@@ -65,9 +65,10 @@ const MiguelStoryFunnel = () => {
         <div className="text-center z-10 max-w-4xl">
           <h1 className="chapter-title mb-8">The Pigeon Escape</h1>
           <p className="poetic-text mb-8">
-            In the beginning, there was Miguel—and there were pigeons.<br/>
-            Not ordinary pigeons, but flaming disciples of broken CTAs,<br/>
-            worshipping in temples of abandoned landing pages.
+            In the beginning, Miguel walked among conversion rates<br/>
+            that refused to convert, and landing pages that landed nowhere.<br/>
+            The pigeons? They were metaphors for bad user flows.<br/>
+            Miguel escaped not by running, but by building something beautiful.
           </p>
           <div className="relative">
             {[...Array(12)].map((_, i) => (
@@ -104,20 +105,20 @@ const MiguelStoryFunnel = () => {
           <h2 className="chapter-title mb-8">The Velvet Cave</h2>
           <div className="chamber-glass rounded-3xl p-12 mb-8">
             <p className="poetic-text mb-6">
-              "Beyond the pigeon smoke, Miguel discovered<br/>
-              a chamber where secrets lived in the walls—<br/>
-              conversion mysteries stitched into velvet darkness,<br/>
-              each thread a whispered promise."
+              "Here, Miguel discovered the secret chambers<br/>
+              where user experience whispers its deepest confessions—<br/>
+              not in analytics dashboards, but in the velvet silence<br/>
+              between a perfect button and the hand that clicks it."
             </p>
             <div className="text-center space-y-4">
               <div className="text-accent font-semibold text-lg animate-pulse">
-                "Every click is a prayer"
+                "If the algorithm doesn't work, Miguel will personally challenge it to a duel"
               </div>
               <div className="text-accent font-semibold text-lg animate-pulse" style={{ animationDelay: '1s' }}>
-                "Every scroll is a confession"
+                "Every pixel has a purpose, every purpose has a story"
               </div>
               <div className="text-accent font-semibold text-lg animate-pulse" style={{ animationDelay: '2s' }}>
-                "Every conversion is a miracle"
+                "Elegance isn't coded—it's conjured"
               </div>
             </div>
           </div>
@@ -141,19 +142,19 @@ const MiguelStoryFunnel = () => {
           <h2 className="chapter-title mb-8">The Observatory of Regret</h2>
           <div className="chamber-glass rounded-3xl p-12 mb-8">
             <p className="poetic-text mb-8">
-              Here dwelt the Ghost of Mobile Layouts Past—<br/>
-              a specter who had built for desktop only,<br/>
-              forever haunted by 404 errors<br/>
-              and the screams of truncated headlines.
+              In this chamber, Miguel met the Ghost of Features Past—<br/>
+              a specter who had built for complexity, not clarity,<br/>
+              forever haunted by user research that never happened<br/>
+              and the quiet desperation of unoptimized journeys.
             </p>
             <div className="text-center">
               <p className="text-destructive text-xl font-medium mb-4">
-                "I never optimized for mobile..."
+                "I added seventeen dropdowns to a simple form..."
               </p>
               <p className="poetic-text text-sm">
                 Miguel wept. Then he rebuilt.<br/>
-                Every pixel responsive. Every interaction elegant.<br/>
-                This is the way.
+                Not with features, but with grace. Not with complexity, but with breath.<br/>
+                This is the way of the elegant founder.
               </p>
             </div>
           </div>
@@ -168,22 +169,22 @@ const MiguelStoryFunnel = () => {
       >
         <FloatingSymbols symbols={['🪞', '✨', '👁️', '🔍']} />
         <div className="text-center z-10 max-w-4xl">
-          <h2 className="chapter-title mb-8">The Mirror of Proof</h2>
+          <h2 className="chapter-title mb-8">The Mirror of Truth</h2>
           <div className="chamber-glass rounded-3xl p-12 mb-8 relative">
             <div className="mirror-shimmer absolute inset-0 rounded-3xl opacity-20"></div>
             <div className="relative z-10">
               <p className="poetic-text mb-8">
-                A scroll-triggered mirror materialized—<br/>
-                not showing what was, but what could be.<br/>
-                In its surface: your reflection,<br/>
-                ready to deploy the perfect funnel.
+                The final chamber revealed its secret—<br/>
+                not a mirror showing what was, but what could be.<br/>
+                In its surface: your reflection as the founder<br/>
+                who builds with Miguel's rhythm, not the market's noise.
               </p>
               <div className="text-center">
                 <p className="text-primary text-2xl font-bold mb-4">
-                  "You are the artifact."
+                  "You are the algorithm."
                 </p>
                 <p className="text-accent italic">
-                  — Miguel, whispering through dimensions
+                  — Miguel, from the chamber of infinite scroll
                 </p>
               </div>
             </div>
@@ -199,29 +200,29 @@ const MiguelStoryFunnel = () => {
       >
         <FloatingSymbols symbols={['🛒', '👑', '⚡', '💫']} />
         <div className="text-center z-10 max-w-4xl">
-          <h2 className="chapter-title mb-8">Claim the Final Relic</h2>
+          <h2 className="chapter-title mb-8">Take What Miguel Left Behind</h2>
           <div className="chamber-glass rounded-3xl p-12 mb-12">
             <p className="poetic-text mb-8">
-              The chamber's final test awaits.<br/>
+              The chamber's final choice awaits.<br/>
               Two paths diverge in this velvet wood—<br/>
-              one leads to preview, one to possession.<br/>
-              Choose wisely, traveler of conversions.
+              one to learn Miguel's methods, one to inherit his magic.<br/>
+              Choose not with urgency, but with the quiet certainty of knowing.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button variant="secondary" size="lg" className="text-lg px-8 py-4">
-                Follow the Footsteps
+                Trace Miguel's Journey Through the Scrolls
               </Button>
               <Button variant="default" size="lg" className="relic-glow text-lg px-8 py-4 hover:scale-105 transition-all duration-300">
-                Claim the Final Relic
+                Take What Miguel Left Behind—If You're Ready
               </Button>
             </div>
           </div>
           <div className="mt-12">
             <p className="text-accent text-xl italic opacity-80 animate-pulse">
-              "Every chamber is a confession."
+              "Clarity isn't coded—it's conjured. And Miguel conjures with velvet, not spreadsheets."
             </p>
             <p className="text-muted-foreground text-sm mt-2">
-              — Miguel's final words, echoing through eternity
+              — Miguel's final transmission, encoded in the chamber walls
             </p>
           </div>
         </div>
