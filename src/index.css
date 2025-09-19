@@ -8,62 +8,62 @@ All colors MUST be HSL for the legendary chamber.
 
 @layer base {
   :root {
-    /* Miguel's Authentic Cathedral Palette - Midnight Sanctum */
-    --background: 256 100% 2%;
-    --foreground: 45 100% 96%;
+    /* Miguel's Brighter Cathedral Palette - Warm Sanctuary */
+    --background: 240 25% 15%;
+    --foreground: 45 100% 95%;
 
     /* Velvet Chamber Cards */
-    --card: 256 50% 4%;
-    --card-foreground: 45 100% 96%;
+    --card: 240 30% 20%;
+    --card-foreground: 45 100% 95%;
 
-    --popover: 256 50% 4%;
-    --popover-foreground: 45 100% 96%;
+    --popover: 240 30% 20%;
+    --popover-foreground: 45 100% 95%;
 
     /* Candlelight Gold Primary */
-    --primary: 45 92% 68%;
-    --primary-foreground: 256 100% 8%;
+    --primary: 45 95% 75%;
+    --primary-foreground: 240 25% 15%;
 
-    /* Deep Velvet Secondary */
-    --secondary: 285 30% 18%;
-    --secondary-foreground: 45 100% 96%;
+    /* Lighter Velvet Secondary */
+    --secondary: 285 40% 35%;
+    --secondary-foreground: 45 100% 95%;
 
-    /* Obsidian Muted Tones */
-    --muted: 285 20% 14%;
-    --muted-foreground: 285 10% 65%;
+    /* Warmer Muted Tones */
+    --muted: 285 25% 25%;
+    --muted-foreground: 285 15% 75%;
 
-    /* Glass Blue Accent */
-    --accent: 285 45% 25%;
-    --accent-foreground: 45 100% 96%;
+    /* Brighter Glass Blue Accent */
+    --accent: 285 50% 45%;
+    --accent-foreground: 45 100% 95%;
 
     /* Cathedral Warning */
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 45 100% 96%;
+    --destructive-foreground: 45 100% 95%;
 
     /* Sacred Borders */
-    --border: 285 20% 14%;
-    --input: 285 20% 14%;
-    --ring: 45 92% 68%;
+    --border: 285 25% 25%;
+    --input: 285 25% 25%;
+    --ring: 45 95% 75%;
 
     /* Ceremonial Radius */
     --radius: 1rem;
 
-    /* Miguel's Authentic Design Tokens - Cathedral at Midnight */
-    --relic-gold: 45 92% 68%;
-    --velvet-deep: 285 60% 12%;
-    --obsidian-pure: 256 100% 1%;
-    --candlelight: 45 100% 85%;
-    --glass-blue: 200 45% 25%;
-    --chamber-glass: rgba(255, 255, 255, 0.03);
+    /* Miguel's Brighter Design Tokens - Warm Cathedral */
+    --relic-gold: 45 95% 75%;
+    --velvet-deep: 285 50% 25%;
+    --obsidian-pure: 240 50% 8%;
+    --candlelight: 45 100% 90%;
+    --glass-blue: 200 60% 45%;
+    --chamber-glass: rgba(255, 255, 255, 0.08);
     
-    /* Gradients for Miguel's sanctuaries */
-    --gradient-velvet: linear-gradient(135deg, hsl(var(--velvet-deep)), hsl(var(--obsidian-pure)));
-    --gradient-candlelight: linear-gradient(180deg, hsl(var(--relic-gold) / 0.9), hsl(var(--relic-gold) / 0.6));
-    --gradient-sanctuary: linear-gradient(45deg, hsl(var(--glass-blue) / 0.4), hsl(var(--velvet-deep) / 0.6));
+    /* Brighter gradients for Miguel's sanctuaries */
+    --gradient-velvet: linear-gradient(135deg, hsl(var(--velvet-deep)), hsl(var(--background)));
+    --gradient-candlelight: linear-gradient(180deg, hsl(var(--relic-gold)), hsl(var(--relic-gold) / 0.8));
+    --gradient-sanctuary: linear-gradient(45deg, hsl(var(--glass-blue) / 0.6), hsl(var(--velvet-deep) / 0.8));
     
-    /* Miguel's sacred illumination */
-    --shadow-velvet: 0 25px 50px -12px hsl(var(--velvet-deep) / 0.5);
-    --shadow-candlelight: 0 15px 35px -8px hsl(var(--relic-gold) / 0.4);
-    --glow-miguel: 0 0 60px hsl(var(--candlelight) / 0.3);
+    /* Miguel's warmer illumination */
+    --shadow-velvet: 0 25px 50px -12px hsl(var(--velvet-deep) / 0.3);
+    --shadow-candlelight: 0 15px 35px -8px hsl(var(--relic-gold) / 0.6);
+    --glow-miguel: 0 0 60px hsl(var(--candlelight) / 0.5);
     
     /* Ceremonial pacing - Miguel never rushes */
     --transition-whisper: all 1.4s cubic-bezier(0.23, 1, 0.32, 1);
